@@ -137,6 +137,30 @@ quick_backup() {
   cp "$1" "$1.bak"
 }
 
+# Usage: add_alias 'shortcut' 'command'
+add_alias() {
+  if [ -z "$1" ] || [ -z "$2" ]; then
+    echo "Usage: add_alias 'shortcut' 'command'"
+    return 1
+  fi
+  alias $1="$2"
+  echo "alias $1=\"$2\"" >> ~/.zshrc
+  echo "Alias added successfully!"
+}
+
+# Add a new environment variable dynamically and save it to ~/.zshrc
+# Usage: add_env 'VAR_NAME' 'value'
+add_env() {
+  if [ -z "$1" ] || [ -z "$2" ]; then
+    echo "Usage: add_env 'VAR_NAME' 'value'"
+    return 1
+  fi
+  export $1="$2"
+  echo "export $1=\"$2\"" >> ~/.zshrc
+  echo "Environment variable added successfully!"
+}
+
+
 
 
 
