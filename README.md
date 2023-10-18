@@ -55,7 +55,7 @@ Welcome to `useful-af`, the shell utility repository that's quite literally, Use
 
 1. 📦 Clone this repo.
    ```bash
-   git clone https://github.com/yourusername/useful-af.git
+   git clone https://github.com/copyleftdev/useful-af.git
    ```
 
 2. 🎉 Add functions to your `.zshrc` or `.bashrc`.
