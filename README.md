@@ -60,12 +60,18 @@ Welcome to `useful-af`, the shell utility repository that's quite literally, Use
 
 2. 🎉 Add functions to your `.zshrc` or `.bashrc`.
    ```bash
-   cat useful-af/useful-af.sh >> ~/.zshrc || cat useful-af/useful-af.sh >> ~/.bashrc
+   cat useful-af/useful-af.sh >> ~/.bashrc
+   ```
+   ```zsh
+   cat useful-af/useful-af.sh >> ~/.zshrc
    ```
 
 3. 🔄 Reload your shell settings.
    ```bash
-   source ~/.zshrc || source ~/.bashrc
+   source ~/.bashrc
+   ```
+   ```zsh
+   source ~/.zshrc
    ```
 
 4. 🥳 Start using these dope functions!
