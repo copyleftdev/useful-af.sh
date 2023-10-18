@@ -51,6 +51,39 @@ Welcome to `useful-af`, the shell utility repository that's quite literally, Use
 
 - 🌐 **Extract URLs**: Extract all URLs from a given website like a crawler with `extract_urls`.
 
+### Weather Utilities 🌦️
+
+- ☀️ **Get Weather by City**: Know the current weather of any city with `get_weather_by_city`.
+  ```bash
+  # Usage: get_weather_by_city <city_name>
+  ```
+  
+- 🛫 **Get Weather by Airport**: Travel smart by checking airport weather with `get_weather_by_airport`.
+  ```bash
+  # Usage: get_weather_by_airport <airport_code>
+  ```
+  
+- 🗺️ **Get Weather by Special Location**: Know the weather at famous landmarks with `get_weather_by_special_location`.
+  ```bash
+  # Usage: get_weather_by_special_location <special_location_name>
+  ```
+  
+- 🌐 **Get Weather by IP or Domain**: Check weather based on an IP address or domain with `get_weather_by_ip_or_domain`.
+  ```bash
+  # Usage: get_weather_by_ip_or_domain <ip_or_domain>
+  ```
+  
+- 🌡️ **Get Weather by Unit**: Get weather in your preferred unit (metric/imperial) with `get_weather_by_unit`.
+  ```bash
+  # Usage: get_weather_by_unit <city_name> <unit>
+  ```
+  
+- 📃 **Get Weather in One Line**: Get a quick one-liner weather update with `get_weather_one_line`.
+  ```bash
+  # Usage: get_weather_one_line <city_name> <format>
+  ```
+
+
 ## 🚀 Getting Started
 
 1. 📦 Clone this repo.
