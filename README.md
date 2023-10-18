@@ -60,7 +60,7 @@ Welcome to `useful-af`, the shell utility repository that's quite literally, Use
 
 2. 🎉 Add functions to your `.zshrc` or `.bashrc`.
    ```bash
-   cat useful-af/useful-af.sh >> ~/.zshrc || cat useful-af/fuseful-af.sh >> ~/.bashrc
+   cat useful-af/useful-af.sh >> ~/.zshrc || cat useful-af/useful-af.sh >> ~/.bashrc
    ```
 
 3. 🔄 Reload your shell settings.
