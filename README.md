@@ -44,6 +44,8 @@ Welcome to `useful-af`, the shell utility repository that's quite literally, Use
 - 📡 **HTTP Server**: Start a simple HTTP server in any folder with `http_server`.
 - 📚 **List All TODO Comments**: Keep track of your todos in code with `list_todos`.
 - 📝 **Base64 Encode/Decode**: Play around with Base64 encoding and decoding using `base64_encode` and `base64_decode`.
+- ✨ **Add Alias**: Create a new shell alias on the fly with `add_alias`.
+- 🌍 **Add Environment Variable**: Dynamically add a new environment variable with `add_env`.
 
 ## 🚀 Getting Started
 
@@ -54,12 +56,12 @@ Welcome to `useful-af`, the shell utility repository that's quite literally, Use
 
 2. 🎉 Add functions to your `.zshrc` or `.bashrc`.
    ```bash
-   cat useful-af/functions.zsh >> ~/.zshrc or cat useful-af/functions.zsh >> ~/.bashrc
+   cat useful-af/functions.zsh >> ~/.zshrc || cat useful-af/functions.zsh >> ~/.bashrc
    ```
 
 3. 🔄 Reload your shell settings.
    ```bash
-   source ~/.zshrc or source ~/.bashrc
+   source ~/.zshrc || source ~/.bashrc
    ```
 
 4. 🥳 Start using these dope functions!
@@ -75,7 +77,3 @@ MIT. Take it, use it, love it.
 ## 🤘 Final Words
 
 So what are you waiting for? Get `useful-af` and make your terminal the paradise you always wanted it to be!
-
----
-
-Feel free to use this README or modify it as you see fit! 🎉
