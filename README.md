@@ -47,6 +47,10 @@ Welcome to `useful-af`, the shell utility repository that's quite literally, Use
 - ✨ **Add Alias**: Create a new shell alias on the fly with `add_alias`.
 - 🌍 **Add Environment Variable**: Dynamically add a new environment variable with `add_env`.
 
+### Data & Analytics
+
+- 🌐 **Extract URLs**: Extract all URLs from a given website like a crawler with `extract_urls`.
+
 ## 🚀 Getting Started
 
 1. 📦 Clone this repo.
