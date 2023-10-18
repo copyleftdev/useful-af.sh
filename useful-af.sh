@@ -170,6 +170,57 @@ extract_urls() {
   curl -s "$1" | grep -oP 'https?://\S+' | sort | uniq
 }
 
+#!/bin/bash
+
+# Function to get weather by city name
+# Usage: get_weather_by_city <city_name>
+get_weather_by_city() {
+  local city="$1"
+  [ -z "$city" ] && { echo "Usage: get_weather_by_city <city_name>"; return; }
+  curl "wttr.in/$city"
+}
+
+# Function to get weather by airport code
+# Usage: get_weather_by_airport <airport_code>
+get_weather_by_airport() {
+  local airport="$1"
+  [ -z "$airport" ] && { echo "Usage: get_weather_by_airport <airport_code>"; return; }
+  curl "wttr.in/$airport"
+}
+
+# Function to get weather by special location
+# Usage: get_weather_by_special_location <special_location_name>
+get_weather_by_special_location() {
+  local special_location="$1"
+  [ -z "$special_location" ] && { echo "Usage: get_weather_by_special_location <special_location_name>"; return; }
+  curl "wttr.in/~$special_location"
+}
+
+# Function to get weather by IP or domain
+# Usage: get_weather_by_ip_or_domain <ip_or_domain>
+get_weather_by_ip_or_domain() {
+  local ip_or_domain="$1"
+  [ -z "$ip_or_domain" ] && { echo "Usage: get_weather_by_ip_or_domain <ip_or_domain>"; return; }
+  curl "wttr.in/@$ip_or_domain"
+}
+
+# Function to get weather by unit
+# Usage: get_weather_by_unit <city_name> <unit>
+get_weather_by_unit() {
+  local city="$1"
+  local unit="$2"
+  [ -z "$city" ] || [ -z "$unit" ] && { echo "Usage: get_weather_by_unit <city_name> <unit>"; return; }
+  curl "wttr.in/$city?$unit"
+}
+
+# Function to get one-line weather output
+# Usage: get_weather_one_line <city_name> <format>
+get_weather_one_line() {
+  local city="$1"
+  local format="$2"
+  [ -z "$city" ] || [ -z "$format" ] && { echo "Usage: get_weather_one_line <city_name> <format>"; return; }
+  curl "wttr.in/$city?format=$format"
+}
 
 
 
