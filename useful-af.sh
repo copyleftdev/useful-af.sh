@@ -159,7 +159,16 @@ add_env() {
   echo "export $1=\"$2\"" >> ~/.zshrc
   echo "Environment variable added successfully!"
 }
+# Extract all URLs from a given website
+# Usage: extract_urls 'https://example.com'
+extract_urls() {
+  if [ -z "$1" ]; then
+    echo "Usage: extract_urls 'website_url'"
+    return 1
+  fi
 
+  curl -s "$1" | grep -oP 'https?://\S+' | sort | uniq
+}
 
 
 
